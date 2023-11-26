@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+    {{- partial "head.html" -}}
+    <body>
+        
+        <!--header-->
+        <header>
+            {{- partial "header.html" -}}
+        </header>
+        <!--/header-->
+
+        <!--main-->
+        <main>
+            {{- block "main" . }}{{- end }}
+        </main>
+        <!--/main-->
+
+        <!--footer-->
+        {{- partial "footer.html" -}}
+        <!--/footer-->
+
+    </body>
+</html>
